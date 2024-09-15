@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class="ion-padding">
+  <ion-grid class="ion-text-center main-grid">
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size="12" size-md="6" class="main-login">
+        <ion-card class="right-login">
+          <ion-card-header>
+            <ion-img src="https://aluno-ext.unisuam.edu.br/layout_externo/img/logo-unisuam.jpg" width="10"></ion-img>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item lines="none" class="ion-align-items-center">
+              <ion-avatar slot="start" class="custom-avatar">
+                <img src="assets/lucas.jpg" alt="Perfil" />
+              </ion-avatar>
+              <ion-label>
+                <h2>Lucas Pereira Da Silva</h2>
+                <p>Matrícula:23204054 </p>
+              </ion-label>
+            </ion-item>
+            <ion-button expand="full" routerLink="/exercicio1">Entrar</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
